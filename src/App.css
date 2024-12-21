@@ -1,11 +1,23 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Use the full viewport height */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #84fab0, #8fd3f4); /* Gradient background */
+  color: #333;
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically centers the child elements */
+  justify-content: center; /* Horizontally centers the child elements */
+}
 
 .App {
   max-width: 500px;
-  margin: 0 auto;
+  width: 100%; /* Ensures it respects the max-width */
+  margin: auto; /* Centers the element in the allocated flex container space */
   padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #c08383;
+  background-color: #e0cece; /* Light grey background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+  border-radius: 8px; /* Rounded corners */
 }
 
 h1 {
@@ -28,7 +40,7 @@ input[type="text"] {
 button {
   padding: 10px 15px;
   font-size: 16px;
-  background-color: #0066cc;
+  background-color: #0066cc; /* Blue */
   color: white;
   border: none;
   cursor: pointer;
